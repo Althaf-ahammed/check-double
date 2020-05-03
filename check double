@@ -1,0 +1,16 @@
+def check_double(number):
+    count=0
+    double=str(number*2)
+    number=str(number)
+    
+    for i in number:
+        if i in double:
+             count+=1
+    if len(number)==count:
+        return True
+    else:
+        return False
+    
+
+#Provide different values for number and test your program
+print(check_double(125874))
